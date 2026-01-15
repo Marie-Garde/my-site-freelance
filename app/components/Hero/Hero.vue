@@ -125,7 +125,7 @@
           border-color: $primary;
 
           &:hover {
-            background-color: darken($primary, 10%);
+            background-color: #1d9180;
           }
         }
 

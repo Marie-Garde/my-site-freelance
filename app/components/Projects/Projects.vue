@@ -5,9 +5,8 @@
       Mes <span class="text-gradient">Projets</span> marquants
     </h2>
     <p class="subtitle">
-      Les technologies que j''utilise au quotidien pour créer des expériences
-      web modernes et performantes. Je m'adapte également très vite aux
-      nouvelles technologies pour compléter efficacement vos besoins.
+      Quelques exemples de projets les plus marquants sur lesquels j'ai
+      travaillé. Le code est parfois soumis à confidentialité.
     </p>
     <div class="projects-container">
       <ProjectCard

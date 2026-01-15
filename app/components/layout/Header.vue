@@ -115,7 +115,7 @@ const closeMenu = () => {
       transition: background-color 0.3s, color 0.3s;
 
       &:hover {
-        background-color: darken($primary, 10%);
+        background-color: #1d9180;
         color: $text-primary;
       }
     }
