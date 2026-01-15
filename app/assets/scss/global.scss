@@ -1,0 +1,69 @@
+@use "variables" as *;
+@import "typographie";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $text-primary;
+  margin: 0;
+  padding: 0;
+  background-color: $background-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+// section {
+//   padding: 5rem 2rem;
+// }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.comment {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0.5rem;
+}
+
+.comment-green {
+  color: $code-green;
+}
+
+.comment-purple {
+  color: $code-purple;
+}
+
+.comment-orange {
+  color: $code-orange;
+}
+
+.comment-blue {
+  color: $code-blue;
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom left, $accent, $primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.color-primary {
+  color: $primary;
+}
