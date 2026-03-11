@@ -13,7 +13,7 @@
       <p class="description">
         Développeuse full-stack <span class="color-primary">JavaScript</span>,
         je m'intègre dans vos équipes pour développer des applications web
-        modernes et performantes. Vue.js, Nuxt, React, Node.js, ... Je
+        modernes et performantes. Vue.js, Nuxt, Angular, Node.js, Nest.js ... Je
         transforme vos idées en code propre et maintenable.
       </p>
       <div class="cta-buttons">
@@ -116,7 +116,10 @@
         text-decoration: none;
         border-radius: 5px;
         font-weight: bold;
-        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        transition:
+          background-color 0.3s,
+          color 0.3s,
+          border-color 0.3s;
         border: 2px solid transparent;
 
         &.primary {

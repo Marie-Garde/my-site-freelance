@@ -14,6 +14,15 @@
     </nav>
     <div class="header-right">
       <a href="#contact" class="contact-button">Me contacter</a>
+      <a
+        href="https://calendly.com/contact-marie-garde/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="calendly-button"
+      >
+        <i class="ti ti-calendar"></i>
+        Prendre RDV
+      </a>
     </div>
 
     <!-- Burger Menu Button -->
@@ -44,6 +53,16 @@
         <a href="#contact" class="contact-button" @click="closeMenu"
           >Me contacter</a
         >
+        <a
+          href="https://calendly.com/marie-garde/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="calendly-button"
+          @click="closeMenu"
+        >
+          <i class="ti ti-calendar"></i>
+          Prendre RDV
+        </a>
       </div>
     </div>
   </header>
@@ -103,7 +122,10 @@ const closeMenu = () => {
   }
 
   .header-right {
-    justify-self: end; // Aligné à droite
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 
     .contact-button {
       background-color: transparent;
@@ -112,11 +134,34 @@ const closeMenu = () => {
       border-radius: 5px;
       border: 1px solid $primary;
       text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
+      transition:
+        background-color 0.3s,
+        color 0.3s;
 
       &:hover {
         background-color: #1d9180;
         color: $text-primary;
+      }
+    }
+
+    .calendly-button {
+      background-color: $primary;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      border: 2px solid $primary;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition:
+        background-color 0.3s,
+        border-color 0.3s;
+
+      &:hover {
+        background-color: #1d9180;
+        border-color: #1d9180;
       }
     }
   }
@@ -235,6 +280,20 @@ const closeMenu = () => {
           border: 1px solid $primary;
           text-decoration: none;
           font-size: 1.2rem;
+        }
+
+        .calendly-button {
+          background-color: $primary;
+          color: white;
+          padding: 0.75rem 1.5rem;
+          border-radius: 5px;
+          border: 2px solid $primary;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
         }
       }
     }
