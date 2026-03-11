@@ -12,8 +12,8 @@
         <div class="badge-container">
           <span class="badge">Vue.js</span>
           <span class="badge">Nuxt.js</span>
-          <span class="badge">React</span>
           <span class="badge">Angular</span>
+          <span class="badge">React Native</span>
           <span class="badge">HTML5</span>
           <span class="badge">CSS3</span>
           <span class="badge">Tailwind CSS</span>
@@ -39,6 +39,7 @@
           <span class="badge">GitHub</span>
           <span class="badge">Docker</span>
           <span class="badge">Jest</span>
+          <span class="badge">Vitest</span>
           <span class="badge">AWS</span>
           <span class="badge">Figma</span>
           <span class="badge">Vercel</span>

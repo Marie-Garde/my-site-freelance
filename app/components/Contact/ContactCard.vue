@@ -1,11 +1,18 @@
 <template>
-  <div class="info-card">
+  <component
+    :is="href ? 'a' : 'div'"
+    class="info-card"
+    :href="href || undefined"
+    :target="href ? '_blank' : undefined"
+    :rel="href ? 'noopener noreferrer' : undefined"
+  >
     <i v-if="icon" :class="['info-card-icon', 'ti', icon]"></i>
     <div class="text">
       <p class="subtitle">{{ subtitle }}</p>
       <h3>{{ title }}</h3>
     </div>
-  </div>
+    <i v-if="href" class="ti ti-external-link external-icon"></i>
+  </component>
 </template>
 
 <script setup>
@@ -16,6 +23,10 @@ defineProps({
   },
   title: String,
   subtitle: String,
+  href: {
+    type: String,
+    default: null,
+  },
 });
 </script>
 
@@ -29,12 +40,18 @@ defineProps({
   align-items: center;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
 
   &:hover {
     border-color: $primary;
 
     .info-card-icon {
       transform: scale(1.1);
+    }
+
+    .external-icon {
+      color: $primary;
     }
   }
 
@@ -47,6 +64,7 @@ defineProps({
 
   .text {
     margin-left: 20px;
+    flex: 1;
 
     .subtitle {
       font-size: 1rem;
@@ -55,6 +73,13 @@ defineProps({
       color: $text-tertiary;
       margin: 0;
     }
+  }
+
+  .external-icon {
+    font-size: 1.2rem;
+    color: $text-tertiary;
+    margin-left: auto;
+    transition: color 0.3s ease;
   }
 }
 </style>
